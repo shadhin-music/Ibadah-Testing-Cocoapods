@@ -6,8 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		07FF59455905C5070FE179F5 /* Pods_IbadahCocoaPods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BBAA5C8B376650D8FA62E8C /* Pods_IbadahCocoaPods.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		1BBAA5C8B376650D8FA62E8C /* Pods_IbadahCocoaPods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IbadahCocoaPods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E596E9B5C2FF4EEC05DBCD9 /* Pods-IbadahCocoaPods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IbadahCocoaPods.debug.xcconfig"; path = "Target Support Files/Pods-IbadahCocoaPods/Pods-IbadahCocoaPods.debug.xcconfig"; sourceTree = "<group>"; };
 		745873DA2D477E59006C4338 /* IbadahCocoaPods.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IbadahCocoaPods.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DBD4D554B5ACD5B69B90E61 /* Pods-IbadahCocoaPods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IbadahCocoaPods.release.xcconfig"; path = "Target Support Files/Pods-IbadahCocoaPods/Pods-IbadahCocoaPods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -36,17 +43,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07FF59455905C5070FE179F5 /* Pods_IbadahCocoaPods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F7F979CA91ABD42778E119B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1BBAA5C8B376650D8FA62E8C /* Pods_IbadahCocoaPods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		745873D12D477E59006C4338 = {
 			isa = PBXGroup;
 			children = (
 				745873DC2D477E59006C4338 /* IbadahCocoaPods */,
 				745873DB2D477E59006C4338 /* Products */,
+				80CA7A51390033B1A8787F55 /* Pods */,
+				0F7F979CA91ABD42778E119B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +76,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		80CA7A51390033B1A8787F55 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5E596E9B5C2FF4EEC05DBCD9 /* Pods-IbadahCocoaPods.debug.xcconfig */,
+				8DBD4D554B5ACD5B69B90E61 /* Pods-IbadahCocoaPods.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -65,9 +92,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 745873ED2D477E5A006C4338 /* Build configuration list for PBXNativeTarget "IbadahCocoaPods" */;
 			buildPhases = (
+				4A5DE5CBD49976004024A117 /* [CP] Check Pods Manifest.lock */,
 				745873D62D477E59006C4338 /* Sources */,
 				745873D72D477E59006C4338 /* Frameworks */,
 				745873D82D477E59006C4338 /* Resources */,
+				418C605B3C26F2C8BFE5066C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -77,8 +106,6 @@
 				745873DC2D477E59006C4338 /* IbadahCocoaPods */,
 			);
 			name = IbadahCocoaPods;
-			packageProductDependencies = (
-			);
 			productName = IbadahCocoaPods;
 			productReference = 745873DA2D477E59006C4338 /* IbadahCocoaPods.app */;
 			productType = "com.apple.product-type.application";
@@ -127,6 +154,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		418C605B3C26F2C8BFE5066C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IbadahCocoaPods/Pods-IbadahCocoaPods-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IbadahCocoaPods/Pods-IbadahCocoaPods-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IbadahCocoaPods/Pods-IbadahCocoaPods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4A5DE5CBD49976004024A117 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IbadahCocoaPods-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		745873D62D477E59006C4338 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,12 +209,14 @@
 /* Begin XCBuildConfiguration section */
 		745873EE2D477E5A006C4338 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E596E9B5C2FF4EEC05DBCD9 /* Pods-IbadahCocoaPods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2Q7Q4L46FQ;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = IbadahCocoaPods/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -168,12 +239,14 @@
 		};
 		745873EF2D477E5A006C4338 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DBD4D554B5ACD5B69B90E61 /* Pods-IbadahCocoaPods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2Q7Q4L46FQ;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = IbadahCocoaPods/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

@@ -1,0 +1,16 @@
+PODS:
+  - Ibadah (1.0.1)
+
+DEPENDENCIES:
+  - Ibadah
+
+SPEC REPOS:
+  trunk:
+    - Ibadah
+
+SPEC CHECKSUMS:
+  Ibadah: 7d255310c03efa4253c2457f7ff8846789df9abe
+
+PODFILE CHECKSUM: 5bc4f6300abf53978be7865506c6278b67defc55
+
+COCOAPODS: 1.16.2
