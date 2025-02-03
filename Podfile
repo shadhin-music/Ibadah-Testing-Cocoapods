@@ -6,7 +6,7 @@ target 'IbadahCocoaPods' do
   use_frameworks!
 
   # Add the Ibadah pod
-  pod 'Ibadah'
+ pod 'Ibadah', '~> 1.0.4'
 
 end
 
